@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quà Gửi Cho Em 🎁</title>
+    <link rel="stylesheet" href="EM.css">
+</head>
+<body>
+
+    <button id="btn-cam-bien">💗</button>
+    <div id="btn-menu">🌻 Tùy chọn</div>
+
+    <div id="menu-panel">
+        <div class="menu-item">
+            <label>🎨 Giấy Gói</label>
+            <select id="chonGiayGoi">
+                <option value="kem">Giấy xốp Trắng Kem</option>
+                <option value="hong">Giấy mờ Hồng</option>
+                <option value="xanh">Voan lưới Xanh Mint</option>
+                <option value="kraft">Giấy Nâu Kraft</option>
+                <option value="den">Giấy nhám Đen</option>
+                <option value="vang">Giấy xốp vàng</option>
+                <option value="do">Giấy đỏ</option>
+                <option value="tim">Voan tim</option>
+                <option value="nau dat">Giấy Nâu đất</option>
+                <option value="cam">Giấy cam</option>***
+            </select>
+        </div>
+        <div class="menu-item">
+            <label>🌸 Loại Hoa </label>
+            <select id="chonLoaiHoa">
+                <option value="mix">Khu vườn hỗn hợp</option>
+                <option value="hong">Hồng Sáp cao cấp</option>
+                <option value="cuc">Cúc Họa Mi</option>
+                <option value="camtucau">Cẩm Tú Cầu</option>
+                <option value="huongduong">Hướng Dương</option>
+            </select>
+        </div>
+        <div class="menu-item">
+            <label>🌈 Bảng Màu </label>
+            <select id="chonChuDeHoa">
+                <option value="pastel">Tone Pastel lãng mạn</option>
+                <option value="tuongphan">Tone Rực rỡ / Tương phản</option>
+                <option value="dongmau">Đồng màu</option>
+            </select>
+        </div>
+        <div class="menu-item">
+            <label>💐 Kiểu Dáng </label>
+            <select id="chonKieuDang">
+                <option value="tron">Form vòm tròn</option>
+                <option value="quat">Form vát mặt</option>
+                <option value="cum">Bố trí theo cụm</option>
+            </select>
+        </div>
+        <div class="menu-item">
+            <label>🎀 Phụ Kiện </label>
+            <select id="chonPhuKien">
+                <option value="full">Nơ to + Giấy note</option>
+                <option value="no">Chỉ đính Nơ</option>
+                <option value="bang">Chỉ Giấy note</option>
+                <option value="none">Tối giản</option>
+            </select>
+        </div>
+        <button id="btn-reset">🌻 Hoa mới</button>
+    </div>
+
+    <div class="bang-ten-cam" id="ui-bang-ten">
+        <div class="noi-dung-bang-ten">Gửi em 🌻</div>
+        <div class="noi-dung-bang-ten">💗</div>
+    </div>
+
+    <svg class="no-hong-nho-phai" id="ui-no-hoa" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50,40 C30,10 0,20 10,50 C20,75 45,55 50,40 C55,55 80,75 90,50 C100,20 70,10 50,40 Z" fill="#ffb6c1" stroke="#ff99aa" stroke-width="1.5"/>
+        <circle cx="50" cy="40" r="6" fill="#ff8fa3" stroke="#ff99aa" stroke-width="1"/>
+        <path d="M45,48 Q35,70 25,75 M55,48 Q65,70 75,75" stroke="#ffb6c1" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+    
+    <div id="phong-thu" class="an-phong-thu">💌 Có một bức thư gửi cho em</div>
+    <div id="modal-thu" class="an-modal">
+        <div class="noi-dung-thu">
+            <h2>Gửi Em ❤️</h2>
+            <p></p>
+            <p></p>
+            <p>🌻</p>
+            <button id="btn-dong-thu">Đóng lại</button>
+        </div>
+    </div>
+    
+    <div id="huong-dan-lac" class="an-huong-dan">
+        <div class="icon-dien-thoai">📱</div>
+        <p>Hãy lắc nhẹ có điều bất ngờ!</p>
+    </div>
+
+    <canvas id="boHoaCanvas"></canvas>
+
+    <script src="EM.js"></script>
+</body>
+</html>
